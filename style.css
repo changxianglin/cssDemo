@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  background: linear-gradient(to bottom, #3A2CAC, #631D9F);
+  height: 280px;
+  padding: 20px;
+}
+
+header nav a {
+  color: #f0f0f0;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  color: #f90;
+}
+
+header nav .user {
+  float: right;
+}
+
+header nav li {
+  display: inline-block;
+  padding-right: 40px;
+}
+
+header .headerMain {
+  width: 730px;
+  color: #ffffff;
+  margin: 50px auto;
+}
+
+header .headerMain .introduction {
+  float: right;
+}
+
+header .headerMain h1 {
+  line-height: 70px;
+}
