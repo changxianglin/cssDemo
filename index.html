@@ -74,5 +74,53 @@
     </div>
   </footer>
   <div class="progress"></div>
+  <div class="dialogWrapper">
+    <div class="mask"></div>
+    <div class="dialog">
+      <div class="title">login</div>
+      <div class="body">
+        <form>
+          <ul>
+            <li>
+              <label>Username</label>
+              <input type="text" name="username">
+            </li>
+            <li>
+              <label>Password</label>
+              <input type="password" name="password" >
+            </li>
+            <li class="operateWrapper">
+              <button id="cancelDialog">Cancel</button>
+              <button class="primary">Login</button>
+            </li>
+          </ul>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function showProgress() {
+      document.querySelector('.progress').classList.add('show')
+    }
+    function hideProgress() {
+      document.querySelector('.progress').classList.remove('show')
+    }
+    // click login button
+    document.querySelector('#login').addEventListener('click', function() {
+      showProgress()
+      setTimeout(function() {
+        hideProgress()
+        document.querySelector('.dialogWrapper').classList.add('show')
+      }, 3000)
+      e.preventDefault()
+    })
+
+    // click cancel button
+    document.querySelector('#cancelDialog').addEventListener('click', function() {
+      document.querySelector('.dialogWrapper').classList.remove('show')
+      e.preventDefault()
+    })
+  </script>
 </body>
 </html>
