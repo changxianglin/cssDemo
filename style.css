@@ -44,3 +44,32 @@ header .headerMain .introduction {
 header .headerMain h1 {
   line-height: 70px;
 }
+
+.banner {
+  width: 690px;
+  padding: 20px;
+  margin: 0 auto;
+  margin-top: -105px;
+  background: #ffffff;
+  box-shadow: 0 0 8px rgba(0, 0, 0, .3);
+}
+.banner ul {
+  text-align: center;
+  font-size: 0;
+}
+.banner ul li {
+  font-size: 14px;
+  display: inline-block;
+  height: 160px;
+  width: 180px;
+  /* background: red; */
+  text-align: center;
+}
+
+.banner ul li .feature {
+  margin: 20px auto;
+  background: #f90;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
