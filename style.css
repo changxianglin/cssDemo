@@ -13,6 +13,11 @@ header {
   padding: 20px;
 }
 
+header nav {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
 header nav a {
   color: #f0f0f0;
   text-decoration: none;
@@ -110,4 +115,19 @@ header .headerMain h1 {
   content: '';
   clear: both;
   display: block;
+}
+
+footer {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  font-size: 12px;
+  color: #999999;
+  text-align: center;
+}
+
+footer .footerContent {
+  width: 1000px;
+  margin: 0 auto;
+  background: red;
 }
