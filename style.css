@@ -7,6 +7,28 @@ ul {
   list-style: none;
 }
 
+@keyframes fadeIn {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  transform: translateY(100px);
+  opacity: 0;
+  animation: fadeIn 1s;
+  animation-fill-mode: forwards;
+}
+
+.fadeInDelay {
+  animation-delay: 1s;
+}
+
 header {
   background: linear-gradient(to bottom, #3A2CAC, #631D9F);
   height: 280px;
@@ -118,9 +140,9 @@ header .headerMain h1 {
 }
 
 footer {
-  position: fixed;
+  /* position: fixed;
   bottom: 0px;
-  width: 100%;
+  width: 100%; */
   font-size: 12px;
   color: #999999;
   text-align: center;
@@ -129,5 +151,5 @@ footer {
 footer .footerContent {
   width: 1000px;
   margin: 0 auto;
-  background: red;
+  /* background: red; */
 }
