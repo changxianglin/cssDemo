@@ -73,3 +73,41 @@ header .headerMain h1 {
   height: 80px;
   border-radius: 50%;
 }
+
+.main {
+  margin: 100px auto;
+  width: 720px;
+  /* background: red; */
+}
+
+.main .block {
+  margin-bottom: 100px;
+  margin-left: -20px;
+}
+
+.main .block .blockText {
+  float: left;
+  width: 260px;
+  line-height: 50px;
+  color: #999999;
+  font-size: 24px;
+  margin-left: 20px;
+}
+
+.main .block .blockText h2 {
+  font-size: 36px;
+  margin-bottom: 50px;
+}
+
+.main .block img {
+  float: left;
+  width: 440px;
+  height: 235px;
+  margin-left: 20px;
+}
+
+.main .block::after {
+  content: '';
+  clear: both;
+  display: block;
+}
